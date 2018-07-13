@@ -6,7 +6,8 @@
 //
 
 import Foundation
-enum CardBrand {
+
+public enum CardBrand {
     case Visa
     case Mastercard
     case AmericanExpress

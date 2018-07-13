@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		478EAA5120F7E020001E4292 /* CreditCardValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478EAA4720F7E020001E4292 /* CreditCardValidator.framework */; };
 		478EAA5620F7E020001E4292 /* CreditCardValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA5520F7E020001E4292 /* CreditCardValidatorTests.swift */; };
-		478EAA5820F7E020001E4292 /* CreditCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 478EAA4A20F7E020001E4292 /* CreditCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		478EAA6220F7E080001E4292 /* CreditCardValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA6120F7E080001E4292 /* CreditCardValidation.swift */; };
 		478EAA6420F7E0C3001E4292 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA6320F7E0C3001E4292 /* Error.swift */; };
 		478EAA6620F7E32A001E4292 /* CardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA6520F7E32A001E4292 /* CardBrand.swift */; };
 		478EAA6820F7FDF2001E4292 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA6720F7FDF2001E4292 /* ErrorType.swift */; };
+		47FBC3BB20F9574B00A6AF8D /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC3BA20F9574B00A6AF8D /* CreditCard.swift */; };
+		47FBC3C520F95C9700A6AF8D /* CreditCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 478EAA4A20F7E020001E4292 /* CreditCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		478EAA6320F7E0C3001E4292 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		478EAA6520F7E32A001E4292 /* CardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.swift; sourceTree = "<group>"; };
 		478EAA6720F7FDF2001E4292 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		47FBC3BA20F9574B00A6AF8D /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,11 @@
 		478EAA4920F7E020001E4292 /* CreditCardValidator */ = {
 			isa = PBXGroup;
 			children = (
-				478EAA4A20F7E020001E4292 /* CreditCardValidator.h */,
+				47FBC3C320F95BD100A6AF8D /* Enums */,
+				47FBC3BD20F957AE00A6AF8D /* Headers */,
+				47FBC3BC20F957A200A6AF8D /* Models */,
 				478EAA4B20F7E020001E4292 /* Info.plist */,
 				478EAA6120F7E080001E4292 /* CreditCardValidation.swift */,
-				478EAA6320F7E0C3001E4292 /* Error.swift */,
-				478EAA6520F7E32A001E4292 /* CardBrand.swift */,
-				478EAA6720F7FDF2001E4292 /* ErrorType.swift */,
 			);
 			path = CreditCardValidator;
 			sourceTree = "<group>";
@@ -98,6 +99,32 @@
 			path = CreditCardValidatorTests;
 			sourceTree = "<group>";
 		};
+		47FBC3BC20F957A200A6AF8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				478EAA6320F7E0C3001E4292 /* Error.swift */,
+				47FBC3BA20F9574B00A6AF8D /* CreditCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47FBC3BD20F957AE00A6AF8D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				478EAA4A20F7E020001E4292 /* CreditCardValidator.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		47FBC3C320F95BD100A6AF8D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				478EAA6520F7E32A001E4292 /* CardBrand.swift */,
+				478EAA6720F7FDF2001E4292 /* ErrorType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,7 +132,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478EAA5820F7E020001E4292 /* CreditCardValidator.h in Headers */,
+				47FBC3C520F95C9700A6AF8D /* CreditCardValidator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				478EAA6620F7E32A001E4292 /* CardBrand.swift in Sources */,
+				47FBC3BB20F9574B00A6AF8D /* CreditCard.swift in Sources */,
 				478EAA6420F7E0C3001E4292 /* Error.swift in Sources */,
 				478EAA6820F7FDF2001E4292 /* ErrorType.swift in Sources */,
 				478EAA6220F7E080001E4292 /* CreditCardValidation.swift in Sources */,

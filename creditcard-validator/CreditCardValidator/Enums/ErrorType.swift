@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ErrorType {
+public enum ErrorType {
     case LeadingZero
     case NonNumeric
     case WrongLength

@@ -32,17 +32,19 @@ class CreditCardValidatorTests: XCTestCase {
         creditCardValidation = nil
     }
     
-    func testCardBrand() {
+    func testGetCardBrand() {
         for i in 0..<cardNumbers.count {
-            let (cardBrand, error) = creditCardValidation!.getCardBrand(for: cardNumbers[i])
-            XCTAssertEqual(cardBrand, cardBrands[i])
-            XCTAssertEqual(error.type, ErrorType.None)
+            let creditCard = creditCardValidation!.getCardBrand(for: cardNumbers[i])
+            XCTAssertEqual(creditCard.brand, cardBrands[i])
+            XCTAssertEqual(creditCard.error.type, ErrorType.None)
         }
         
         //checking nil card number
-        let (cardBrand, error) = creditCardValidation!.getCardBrand(for: nil)
-        XCTAssertEqual(cardBrand, .Invalid)
-        XCTAssertEqual(error.type, ErrorType.NullCardNumber)
+        let creditCard = creditCardValidation!.getCardBrand(for: nil)
+        
+        XCTAssertNil(creditCard.number)
+        XCTAssertEqual(creditCard.brand, .Invalid)
+        XCTAssertEqual(creditCard.error.type, ErrorType.NullCardNumber)
     }
     
     func testCheckLuhn() {

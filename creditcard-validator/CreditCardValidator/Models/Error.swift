@@ -6,12 +6,13 @@
 //
 
 import Foundation
-class Error {
+
+public class Error {
 
     private var _type: ErrorType
     private var _details: String?
     
-    init(_ errorType: ErrorType) {
+    public init(_ errorType: ErrorType) {
         _type = errorType
         _details = self.getErrorDetails()
     }
