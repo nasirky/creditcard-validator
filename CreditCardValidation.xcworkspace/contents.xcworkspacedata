@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:creditcard-validation-example/CreditCardValidationExample/CreditCardValidationExample.xcodeproj">
+      location = "group:creditcard-validation-example/CreditCardValidationExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:creditcard-validator/CreditCardValidator.xcodeproj">

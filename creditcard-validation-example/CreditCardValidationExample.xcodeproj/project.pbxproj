@@ -23,6 +23,20 @@
 			remoteGlobalIDString = 47FBC37B20F9533500A6AF8D;
 			remoteInfo = CreditCardValidationExample;
 		};
+		47FBC3A720F954A400A6AF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 478EAA4720F7E020001E4292;
+			remoteInfo = CreditCardValidator;
+		};
+		47FBC3A920F954A400A6AF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 478EAA5020F7E020001E4292;
+			remoteInfo = CreditCardValidatorTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +50,7 @@
 		47FBC39020F9533800A6AF8D /* CreditCardValidationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardValidationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardValidationExampleUITests.swift; sourceTree = "<group>"; };
 		47FBC39620F9533800A6AF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CreditCardValidator.xcodeproj; path = "../../creditcard-validator/CreditCardValidator.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 				47FBC37E20F9533500A6AF8D /* CreditCardValidationExample */,
 				47FBC39320F9533800A6AF8D /* CreditCardValidationExampleUITests */,
 				47FBC37D20F9533500A6AF8D /* Products */,
+				47FBC3A120F954A300A6AF8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +93,10 @@
 		47FBC37E20F9533500A6AF8D /* CreditCardValidationExample */ = {
 			isa = PBXGroup;
 			children = (
+				47FBC39F20F9545500A6AF8D /* Storyboards */,
+				47FBC3A020F9547000A6AF8D /* View Controllers */,
 				47FBC37F20F9533500A6AF8D /* AppDelegate.swift */,
-				47FBC38120F9533500A6AF8D /* ViewController.swift */,
-				47FBC38320F9533500A6AF8D /* Main.storyboard */,
 				47FBC38620F9533800A6AF8D /* Assets.xcassets */,
-				47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */,
 				47FBC38B20F9533800A6AF8D /* Info.plist */,
 			);
 			path = CreditCardValidationExample;
@@ -94,6 +109,40 @@
 				47FBC39620F9533800A6AF8D /* Info.plist */,
 			);
 			path = CreditCardValidationExampleUITests;
+			sourceTree = "<group>";
+		};
+		47FBC39F20F9545500A6AF8D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC38320F9533500A6AF8D /* Main.storyboard */,
+				47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		47FBC3A020F9547000A6AF8D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC38120F9533500A6AF8D /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		47FBC3A120F954A300A6AF8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47FBC3A320F954A400A6AF8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC3A820F954A400A6AF8D /* CreditCardValidator.framework */,
+				47FBC3AA20F954A400A6AF8D /* CreditCardValidatorTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +213,12 @@
 			mainGroup = 47FBC37320F9533500A6AF8D;
 			productRefGroup = 47FBC37D20F9533500A6AF8D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 47FBC3A320F954A400A6AF8D /* Products */;
+					ProjectRef = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				47FBC37B20F9533500A6AF8D /* CreditCardValidationExample */,
@@ -171,6 +226,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		47FBC3A820F954A400A6AF8D /* CreditCardValidator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CreditCardValidator.framework;
+			remoteRef = 47FBC3A720F954A400A6AF8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		47FBC3AA20F954A400A6AF8D /* CreditCardValidatorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CreditCardValidatorTests.xctest;
+			remoteRef = 47FBC3A920F954A400A6AF8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47FBC37A20F9533500A6AF8D /* Resources */ = {
