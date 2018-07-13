@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47FBC38020F9533500A6AF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC37F20F9533500A6AF8D /* AppDelegate.swift */; };
+		47FBC38220F9533500A6AF8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC38120F9533500A6AF8D /* ViewController.swift */; };
+		47FBC38520F9533500A6AF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38320F9533500A6AF8D /* Main.storyboard */; };
+		47FBC38720F9533800A6AF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38620F9533800A6AF8D /* Assets.xcassets */; };
+		47FBC38A20F9533800A6AF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */; };
+		47FBC39520F9533800A6AF8D /* CreditCardValidationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47FBC39120F9533800A6AF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47FBC37420F9533500A6AF8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47FBC37B20F9533500A6AF8D;
+			remoteInfo = CreditCardValidationExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47FBC37C20F9533500A6AF8D /* CreditCardValidationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardValidationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FBC37F20F9533500A6AF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47FBC38120F9533500A6AF8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47FBC38420F9533500A6AF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47FBC38620F9533800A6AF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47FBC38920F9533800A6AF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47FBC38B20F9533800A6AF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FBC39020F9533800A6AF8D /* CreditCardValidationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardValidationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardValidationExampleUITests.swift; sourceTree = "<group>"; };
+		47FBC39620F9533800A6AF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47FBC37920F9533500A6AF8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FBC38D20F9533800A6AF8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47FBC37320F9533500A6AF8D = {
+			isa = PBXGroup;
+			children = (
+				47FBC37E20F9533500A6AF8D /* CreditCardValidationExample */,
+				47FBC39320F9533800A6AF8D /* CreditCardValidationExampleUITests */,
+				47FBC37D20F9533500A6AF8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47FBC37D20F9533500A6AF8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC37C20F9533500A6AF8D /* CreditCardValidationExample.app */,
+				47FBC39020F9533800A6AF8D /* CreditCardValidationExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47FBC37E20F9533500A6AF8D /* CreditCardValidationExample */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC37F20F9533500A6AF8D /* AppDelegate.swift */,
+				47FBC38120F9533500A6AF8D /* ViewController.swift */,
+				47FBC38320F9533500A6AF8D /* Main.storyboard */,
+				47FBC38620F9533800A6AF8D /* Assets.xcassets */,
+				47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */,
+				47FBC38B20F9533800A6AF8D /* Info.plist */,
+			);
+			path = CreditCardValidationExample;
+			sourceTree = "<group>";
+		};
+		47FBC39320F9533800A6AF8D /* CreditCardValidationExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */,
+				47FBC39620F9533800A6AF8D /* Info.plist */,
+			);
+			path = CreditCardValidationExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47FBC37B20F9533500A6AF8D /* CreditCardValidationExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FBC39920F9533800A6AF8D /* Build configuration list for PBXNativeTarget "CreditCardValidationExample" */;
+			buildPhases = (
+				47FBC37820F9533500A6AF8D /* Sources */,
+				47FBC37920F9533500A6AF8D /* Frameworks */,
+				47FBC37A20F9533500A6AF8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditCardValidationExample;
+			productName = CreditCardValidationExample;
+			productReference = 47FBC37C20F9533500A6AF8D /* CreditCardValidationExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47FBC38F20F9533800A6AF8D /* CreditCardValidationExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FBC39C20F9533800A6AF8D /* Build configuration list for PBXNativeTarget "CreditCardValidationExampleUITests" */;
+			buildPhases = (
+				47FBC38C20F9533800A6AF8D /* Sources */,
+				47FBC38D20F9533800A6AF8D /* Frameworks */,
+				47FBC38E20F9533800A6AF8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47FBC39220F9533800A6AF8D /* PBXTargetDependency */,
+			);
+			name = CreditCardValidationExampleUITests;
+			productName = CreditCardValidationExampleUITests;
+			productReference = 47FBC39020F9533800A6AF8D /* CreditCardValidationExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47FBC37420F9533500A6AF8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ghulam Nasir";
+				TargetAttributes = {
+					47FBC37B20F9533500A6AF8D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					47FBC38F20F9533800A6AF8D = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 47FBC37B20F9533500A6AF8D;
+					};
+				};
+			};
+			buildConfigurationList = 47FBC37720F9533500A6AF8D /* Build configuration list for PBXProject "CreditCardValidationExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47FBC37320F9533500A6AF8D;
+			productRefGroup = 47FBC37D20F9533500A6AF8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47FBC37B20F9533500A6AF8D /* CreditCardValidationExample */,
+				47FBC38F20F9533800A6AF8D /* CreditCardValidationExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47FBC37A20F9533500A6AF8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FBC38A20F9533800A6AF8D /* LaunchScreen.storyboard in Resources */,
+				47FBC38720F9533800A6AF8D /* Assets.xcassets in Resources */,
+				47FBC38520F9533500A6AF8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FBC38E20F9533800A6AF8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47FBC37820F9533500A6AF8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FBC38220F9533500A6AF8D /* ViewController.swift in Sources */,
+				47FBC38020F9533500A6AF8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FBC38C20F9533800A6AF8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FBC39520F9533800A6AF8D /* CreditCardValidationExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47FBC39220F9533800A6AF8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47FBC37B20F9533500A6AF8D /* CreditCardValidationExample */;
+			targetProxy = 47FBC39120F9533800A6AF8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47FBC38320F9533500A6AF8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FBC38420F9533500A6AF8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FBC38920F9533800A6AF8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47FBC39720F9533800A6AF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47FBC39820F9533800A6AF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47FBC39A20F9533800A6AF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditCardValidationExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasir.creditcardvalidationexample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47FBC39B20F9533800A6AF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditCardValidationExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasir.creditcardvalidationexample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47FBC39D20F9533800A6AF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditCardValidationExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasir.CreditCardValidationExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditCardValidationExample;
+			};
+			name = Debug;
+		};
+		47FBC39E20F9533800A6AF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CreditCardValidationExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasir.CreditCardValidationExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditCardValidationExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47FBC37720F9533500A6AF8D /* Build configuration list for PBXProject "CreditCardValidationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FBC39720F9533800A6AF8D /* Debug */,
+				47FBC39820F9533800A6AF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FBC39920F9533800A6AF8D /* Build configuration list for PBXNativeTarget "CreditCardValidationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FBC39A20F9533800A6AF8D /* Debug */,
+				47FBC39B20F9533800A6AF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FBC39C20F9533800A6AF8D /* Build configuration list for PBXNativeTarget "CreditCardValidationExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FBC39D20F9533800A6AF8D /* Debug */,
+				47FBC39E20F9533800A6AF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47FBC37420F9533500A6AF8D /* Project object */;
+}
