@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CreditCardValidation.getCardBrand(for:):CreditCardValidation.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "number.dropLast(number.count - maxRange.count)">
+            </PersistentString>
+            <PersistentString
+               value = "minRangePrefix &gt;= Int(minRange)! &amp;&amp; maxRangePrefix &lt;= Int(maxRange)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
