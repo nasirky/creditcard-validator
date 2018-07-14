@@ -14,5 +14,4 @@ public enum ErrorType {
     case LuhnCheckFailed
     case NullCardNumber
     case UnsupportedCardBrand
-    case None
 }

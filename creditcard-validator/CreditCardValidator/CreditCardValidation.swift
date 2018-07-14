@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 public class CreditCardValidation {
     //MARK:- Private Members/Intializations
     private var _lengthConstraints: [Int : [CardBrand]] = [
@@ -35,13 +36,15 @@ public class CreditCardValidation {
         .JCB : ["35"]]
 
     //MARK:- Public Methods
+    public init() {
+    }
+    
     /* A credit card number is valid when it meets the following conditions:
      1. it contains only numbers and no leading 0
      2. it is 13-16 digits long
      3. It passes the Luhn check (https://en.wikipedia.org/wiki/Luhn_algorithm). For credit card numbers, the Luhn check digit is the last digit of the sequence.
      */
-    
-    public func isValid(_ cardNumber:String?, acceptOnlyPredefinedCardBrands: Bool = false) -> Error {
+    public func isValid(_ cardNumber:String?, acceptOnlyPredefinedCardBrands: Bool = false) -> Error? {
         guard let cardNumber = removeDashesAndSpaces(cardNumber) else { return Error(.NullCardNumber) }
         
         guard self.isNumeric(cardNumber) else { return Error(.NonNumeric)}
@@ -63,7 +66,7 @@ public class CreditCardValidation {
             return Error(.UnsupportedCardBrand)
         }
         
-        return Error(.None)
+        return nil
     }
     
     /* Algorithm
@@ -80,7 +83,8 @@ public class CreditCardValidation {
 
         guard self.isNumeric(cardNumber) else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.NonNumeric))}
 
-        guard let possibleBrands = _lengthConstraints[length] else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.None)) }
+        guard let possibleBrands = _lengthConstraints[length] else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.UnsupportedCardBrand))
+        }
         
         for brand in possibleBrands {
             // Unwrapping optional as we already know that there would be at least 1 possible brand
@@ -104,13 +108,13 @@ public class CreditCardValidation {
                  */
  
                 if minRangePrefix >= Int(minRange)! && maxRangePrefix <= Int(maxRange)! {
-                    return CreditCard(with: cardNumber, brand: brand, error: Error(.None))
+                    return CreditCard(with: cardNumber, brand: brand, error: nil)
                 }
             }
             
         }
         
-        return CreditCard(with: cardNumber, brand: .Other, error: Error(.None))
+        return CreditCard(with: cardNumber, brand: .Other, error: nil)
     }
     
     /* This function performs the Luhn Check. Luhn Check digit is the last digit in the credit cards. It is a verification step to make sure that the credit card number is correct. For more information, please visit https://en.wikipedia.org/wiki/Luhn_algorithm
@@ -141,6 +145,16 @@ public class CreditCardValidation {
         return sum % 10 == 0
     }
 
+    /* Helper function that performs validation and also returns card brand information */
+    public func validateAndReturnCardBrand(for cardNumber: String?) -> CreditCard {
+        let creditCard = getCardBrand(for: cardNumber)
+        let error = isValid(cardNumber)
+        
+        //Validation error supersedes brand errors (invalid brand etc.)
+        creditCard.error = error
+        
+        return creditCard
+    }
 }
 
 extension CreditCardValidation {
@@ -155,7 +169,7 @@ extension CreditCardValidation {
     private func removeDashesAndSpaces(_ cardNumber: String?) -> String? {
         guard let cardNumber = cardNumber else { return nil }
 
-        let regex = try? NSRegularExpression.init(pattern: "[^0-9]+", options: .caseInsensitive)
+        let regex = try? NSRegularExpression(pattern: "[^0-9]+", options: .caseInsensitive)
         let range = NSMakeRange(0, cardNumber.count)
         if let processedCardNumber = regex?.stringByReplacingMatches(in: cardNumber, options: .reportCompletion, range: range, withTemplate: "") {
             return processedCardNumber
