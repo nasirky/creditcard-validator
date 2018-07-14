@@ -24,13 +24,13 @@ public class Error {
         case .NonNumeric:
             return "Credit Card Number can only numeric (it may also contains spaces or dashes(-))"
         case .WrongLength:
-            return "Credit Card Number should not be less than 13 or more than 16 characters long"
+            return "Credit Card Number should not be less than \(Constants.minimumCardLength) or more than \(Constants.maximumCardLength) characters long"
         case .LuhnCheckFailed:
             return "Credit Card Number failed to pass the Luhn Check"
         case .UnsupportedCardBrand:
             return "Sorry, we are not supporting this card brand at the time"
-        default:
-            return "None"
+        case .NullCardNumber:
+            return "Credit card number should not be empty or nil (null)"
         }
     }
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4702B09E20FA0AE500607CD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702B09D20FA0AE500607CD0 /* Constants.swift */; };
 		478EAA5120F7E020001E4292 /* CreditCardValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478EAA4720F7E020001E4292 /* CreditCardValidator.framework */; };
 		478EAA5620F7E020001E4292 /* CreditCardValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA5520F7E020001E4292 /* CreditCardValidatorTests.swift */; };
 		478EAA6220F7E080001E4292 /* CreditCardValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EAA6120F7E080001E4292 /* CreditCardValidation.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4702B09D20FA0AE500607CD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		478EAA4720F7E020001E4292 /* CreditCardValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreditCardValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478EAA4A20F7E020001E4292 /* CreditCardValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditCardValidator.h; sourceTree = "<group>"; };
 		478EAA4B20F7E020001E4292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				47FBC3BC20F957A200A6AF8D /* Models */,
 				478EAA4B20F7E020001E4292 /* Info.plist */,
 				478EAA6120F7E080001E4292 /* CreditCardValidation.swift */,
+				4702B09D20FA0AE500607CD0 /* Constants.swift */,
 			);
 			path = CreditCardValidator;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				478EAA6420F7E0C3001E4292 /* Error.swift in Sources */,
 				478EAA6820F7FDF2001E4292 /* ErrorType.swift in Sources */,
 				478EAA6220F7E080001E4292 /* CreditCardValidation.swift in Sources */,
+				4702B09E20FA0AE500607CD0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

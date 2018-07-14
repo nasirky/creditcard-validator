@@ -8,33 +8,6 @@
 import Foundation
 
 public class CreditCardValidation {
-    //MARK:- Private Members/Intializations
-    private var _lengthConstraints: [Int : [CardBrand]] = [
-        13 : [.Visa],
-        14 : [.DinersClub],
-        15 : [.AmericanExpress, .JCB],
-        16 : [.Visa, .Mastercard, .Discover, .JCB]
-    ]
-
-    /* Visa -> always start with 4
-     * Mastercard -> start with 51 to 55 or 2221 to 2720
-     * AmericanExpress -> start with 34 or 37
-     * DinersClub -> Start with 36, 38 or 300 to 305
-     * Discover -> Starts with 65 or 6011
-     * JCB -> Starts with 35 (JCB15 -> variation with length 15 (starts with 1800 or 2131))
-     * The reason behind having an extra JCB15 is to make both 15 and 16 numbers long JCB cards without writing any special conditions
-     
-     * Note: hyphen/dash (-) between numbers specify a range such as 51-55 means 51 to 55 (both inclusive)
-     */
-    private var _prefixConstraints: [CardBrand: [String]] = [
-        .Visa : ["4"],
-        .Mastercard: ["51-55", "2221-2720"],
-        .AmericanExpress: ["34", "37"],
-        .DinersClub : ["36", "38", "300-305"],
-        .Discover : ["65", "6011"],
-        .JCB15 : ["1800", "2131"],
-        .JCB : ["35"]]
-
     //MARK:- Public Methods
     public init() {
     }
@@ -47,16 +20,14 @@ public class CreditCardValidation {
     public func isValid(_ cardNumber:String?, acceptOnlyPredefinedCardBrands: Bool = false) -> Error? {
         guard let cardNumber = removeDashesAndSpaces(cardNumber) else { return Error(.NullCardNumber) }
         
+        guard cardNumber.count >= Constants.minimumCardLength && cardNumber.count <= Constants.maximumCardLength else  { return Error(.WrongLength) }
+
         guard self.isNumeric(cardNumber) else { return Error(.NonNumeric)}
-        
+
         guard !self.getSubstring(from: cardNumber, index: 0, length: 1).elementsEqual("0") else {
             return Error(.LeadingZero)
         }
-        
-        guard cardNumber.count >= 13 && cardNumber.count <= 16 else {
-            return Error(.WrongLength)
-        }
-        
+                
         if !self.checkLuhn(for: cardNumber) {
             return Error(.LuhnCheckFailed)
         }
@@ -79,16 +50,21 @@ public class CreditCardValidation {
         guard let cardNumber = removeDashesAndSpaces(cardNumber) else { return CreditCard(with: nil, brand: .Invalid, error: Error(.NullCardNumber))
         }
         
-        let length = cardNumber.count
+        guard cardNumber.count >= Constants.minimumCardLength && cardNumber.count <= Constants.maximumCardLength else {
+            return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.WrongLength))
+        }
 
         guard self.isNumeric(cardNumber) else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.NonNumeric))}
 
-        guard let possibleBrands = _lengthConstraints[length] else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.UnsupportedCardBrand))
+        let length = cardNumber.count
+
+
+        guard let possibleBrands = Constants._lengthConstraints[length] else { return CreditCard(with: cardNumber, brand: .Invalid, error: Error(.UnsupportedCardBrand))
         }
         
         for brand in possibleBrands {
             // Unwrapping optional as we already know that there would be at least 1 possible brand
-            let constraints = _prefixConstraints[brand]!
+            let constraints = Constants._prefixConstraints[brand]!
             
             for constraint in constraints {
                 let components = constraint.split(separator: "-")
@@ -168,13 +144,17 @@ extension CreditCardValidation {
     
     private func removeDashesAndSpaces(_ cardNumber: String?) -> String? {
         guard let cardNumber = cardNumber else { return nil }
+ 
+        guard cardNumber.count > 0 else { return nil }
 
         let regex = try? NSRegularExpression(pattern: "[^0-9]+", options: .caseInsensitive)
         let range = NSMakeRange(0, cardNumber.count)
         if let processedCardNumber = regex?.stringByReplacingMatches(in: cardNumber, options: .reportCompletion, range: range, withTemplate: "") {
+            //Checking the count on both the original number as well as the processed number (as the original number might contain spaces, new lines etc.)
+            guard processedCardNumber.count > 0 else { return nil }
+
             return processedCardNumber
         }
-        
         return cardNumber
     }
 
