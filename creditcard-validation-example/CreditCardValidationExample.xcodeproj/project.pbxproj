@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4702B09A20FA013B00607CD0 /* CreditCardValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4702B09820FA013200607CD0 /* CreditCardValidator.framework */; };
+		4702B09B20FA013B00607CD0 /* CreditCardValidator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4702B09820FA013200607CD0 /* CreditCardValidator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		47FBC38020F9533500A6AF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC37F20F9533500A6AF8D /* AppDelegate.swift */; };
 		47FBC38220F9533500A6AF8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC38120F9533500A6AF8D /* ViewController.swift */; };
 		47FBC38520F9533500A6AF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38320F9533500A6AF8D /* Main.storyboard */; };
 		47FBC38720F9533800A6AF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38620F9533800A6AF8D /* Assets.xcassets */; };
 		47FBC38A20F9533800A6AF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FBC38820F9533800A6AF8D /* LaunchScreen.storyboard */; };
 		47FBC39520F9533800A6AF8D /* CreditCardValidationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */; };
+		47FBC3E120F9657F00A6AF8D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC3E020F9657F00A6AF8D /* Helper.swift */; };
+		47FBC3E420F966DA00A6AF8D /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBC3E320F966DA00A6AF8D /* CreditCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,23 +27,24 @@
 			remoteGlobalIDString = 47FBC37B20F9533500A6AF8D;
 			remoteInfo = CreditCardValidationExample;
 		};
-		47FBC3A720F954A400A6AF8D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 478EAA4720F7E020001E4292;
-			remoteInfo = CreditCardValidator;
-		};
-		47FBC3A920F954A400A6AF8D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 478EAA5020F7E020001E4292;
-			remoteInfo = CreditCardValidatorTests;
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4702B09C20FA013B00607CD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4702B09B20FA013B00607CD0 /* CreditCardValidator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4702B09820FA013200607CD0 /* CreditCardValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreditCardValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBC37C20F9533500A6AF8D /* CreditCardValidationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardValidationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBC37F20F9533500A6AF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FBC38120F9533500A6AF8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +55,8 @@
 		47FBC39020F9533800A6AF8D /* CreditCardValidationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardValidationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBC39420F9533800A6AF8D /* CreditCardValidationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardValidationExampleUITests.swift; sourceTree = "<group>"; };
 		47FBC39620F9533800A6AF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CreditCardValidator.xcodeproj; path = "../../creditcard-validator/CreditCardValidator.xcodeproj"; sourceTree = "<group>"; };
+		47FBC3E020F9657F00A6AF8D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		47FBC3E320F966DA00A6AF8D /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4702B09A20FA013B00607CD0 /* CreditCardValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +100,8 @@
 		47FBC37E20F9533500A6AF8D /* CreditCardValidationExample */ = {
 			isa = PBXGroup;
 			children = (
+				47FBC3E220F9668600A6AF8D /* Cells */,
+				47FBC3DD20F9657000A6AF8D /* Helpers */,
 				47FBC39F20F9545500A6AF8D /* Storyboards */,
 				47FBC3A020F9547000A6AF8D /* View Controllers */,
 				47FBC37F20F9533500A6AF8D /* AppDelegate.swift */,
@@ -131,18 +140,25 @@
 		47FBC3A120F954A300A6AF8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */,
+				4702B09820FA013200607CD0 /* CreditCardValidator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47FBC3A320F954A400A6AF8D /* Products */ = {
+		47FBC3DD20F9657000A6AF8D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				47FBC3A820F954A400A6AF8D /* CreditCardValidator.framework */,
-				47FBC3AA20F954A400A6AF8D /* CreditCardValidatorTests.xctest */,
+				47FBC3E020F9657F00A6AF8D /* Helper.swift */,
 			);
-			name = Products;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		47FBC3E220F9668600A6AF8D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				47FBC3E320F966DA00A6AF8D /* CreditCardTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +171,7 @@
 				47FBC37820F9533500A6AF8D /* Sources */,
 				47FBC37920F9533500A6AF8D /* Frameworks */,
 				47FBC37A20F9533500A6AF8D /* Resources */,
+				4702B09C20FA013B00607CD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,12 +230,6 @@
 			mainGroup = 47FBC37320F9533500A6AF8D;
 			productRefGroup = 47FBC37D20F9533500A6AF8D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 47FBC3A320F954A400A6AF8D /* Products */;
-					ProjectRef = 47FBC3A220F954A400A6AF8D /* CreditCardValidator.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				47FBC37B20F9533500A6AF8D /* CreditCardValidationExample */,
@@ -226,23 +237,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		47FBC3A820F954A400A6AF8D /* CreditCardValidator.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CreditCardValidator.framework;
-			remoteRef = 47FBC3A720F954A400A6AF8D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		47FBC3AA20F954A400A6AF8D /* CreditCardValidatorTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CreditCardValidatorTests.xctest;
-			remoteRef = 47FBC3A920F954A400A6AF8D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47FBC37A20F9533500A6AF8D /* Resources */ = {
@@ -269,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FBC3E420F966DA00A6AF8D /* CreditCardTableViewCell.swift in Sources */,
 				47FBC38220F9533500A6AF8D /* ViewController.swift in Sources */,
 				47FBC38020F9533500A6AF8D /* AppDelegate.swift in Sources */,
+				47FBC3E120F9657F00A6AF8D /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
